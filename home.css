@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    background: rgb(239, 243, 246);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    min-width: 150px;
+    margin-left: 17px;
+    position: relative;
+    flex: 28.3%;
+    background: #fff;
+    padding: 17px 5px 5px 17px;
+    border-radius: 3px;
+}
+
+.card-header {
+    background: rgb(239, 243, 246);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 100%;
+    background: rgb(197, 208, 222);
+    position: absolute;
+    left: 31px;
+    top: 30px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.profile-desc {
+    padding-left: 79px;
+    padding-top: 4px;
+}
+
+.flex-space-btw {
+    justify-content: space-between;
+}
+
+.left-nabbar {
+    flex: 15%;
+    height: 100vh;
+    background: rgb(34, 44, 60);
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6px;
+}
+
+.right-section {
+    flex: 85%;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.header-title {
+    margin-left: 68px;
+}
+
+.right-section-content {
+    padding: 27px 15px 0 11px;
+}
+
+.ux-designer {
+    font-size: 10px;
+    color: #000;
+
+}
+
+.ux-des-country {
+    font-size: 10px;
+    color: grey;
+}
+
+.action-btn {
+    border: none;
+    border-radius: 5px;
+    background: rgb(56, 180, 73);
+    font-size: 8px;
+    color: #fff;
+    padding: 8px 29px 9px 29px;
+}
+
+.a-hire {
+    color: rgb(56, 180, 73);
+    font-size: 10px;
+}
+
+.icon {
+    width:14px;
+    height: 14px;
+    border-radius:100%;
+    font-size: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.colorBlue{
+    color:rgb(44,160,247);
+}
+
+.iconOrange{
+    background: rgb(255,135,5);
+}
+
+.iconGreen{
+    background: rgb(155,177,73);
+}
+
+.iconblue{
+    background: rgb(44,160,247);
+}
+
+.menuText{
+    color:grey;
+    font-size: 8px;
+}
+.seperator{
+    background: grey;
+}
+.row{
+    flex-direction: row;
+}
+
+.mt25{
+    margin-top: 25px;
+}
+
+.pagination-btn{
+    border:none;
+    background: #fff;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding: 7px;
+    margin-top: 50px;
+}
+
+.prv-btn{
+    margin-left: 29px;
+}
+
+.pages{
+    background: none;
+}
+
+.nxt-btn{
+   
+    margin-right: 17px;
+}
+
+.opc5{
+    opacity: 0.5;
+}
+
+.pages{
+    color:grey
+}
+.user-section{
+    background: rgb(255,255,255);
+}
+
+.user-section p {
+    margin-left:27px
+}
