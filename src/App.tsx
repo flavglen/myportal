@@ -5,7 +5,8 @@ import {
 } from "react-router-dom";
 import Home from './components/home/Home';
 import Timeline from './components/timeline/timeline';
-import { Layout } from './components/common/Layout';
+import { Layout } from './components/common/layout/Layout';
+import Projects from './components/projects/Projects';
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,8 @@ const router = createBrowserRouter([
         element: <Timeline />
       },
       {
-        path: '/bar',
-        element: <div>foo</div>,
+        path: '/projects',
+        element: <Projects />
       }
     ],
   },

@@ -16,17 +16,17 @@ const Sidebar: React.FC = () => {
         <Link to='timeline'>Timeline</Link>
       </li>
       <li>
-        <Link to='timeline'>Projects</Link>
+        <Link to='projects'>Projects</Link>
       </li>
       <li>
          <Link to='timeline'>Skills</Link>    
       </li>
-      <li>
+      {/* <li>
         <Link to='timeline'>Contact</Link>  
       </li>
       <li>
         <Link to='timeline'>Gallery</Link>
-      </li>
+      </li> */}
     </ul>
     <hr/>
     <div className="dropdown">
