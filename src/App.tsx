@@ -6,7 +6,6 @@ import {
 import Sidebar from './components/sidebar/sidebar';
 import Home from './components/home/Home';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
