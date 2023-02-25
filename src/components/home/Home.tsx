@@ -5,7 +5,7 @@ import { Center, Flex } from '@chakra-ui/react'
 const Home: React.FC = () => {
     return (
         <Flex color='white' alignContent="center"  height="40em">
-            <Center>
+            <Center flex='3' mx="3">
                 <Card
                     direction={{ base: 'column', sm: 'row' }}
                     overflow='hidden'
@@ -14,16 +14,21 @@ const Home: React.FC = () => {
 
                     <Stack>
                         <CardBody>
-                            <Heading size='md'>The perfect latte</Heading>
+                            <Heading size='md'>Glen Flavian Pais</Heading>
 
                             <Text py='2'>
-                                Caffè latte is a coffee beverage of Italian origin made with espresso
-                                and steamed milk.
+                                <p>Hello, I'm Glen, a frontent and node developer with a passion for crafting beautiful and responsive web interfaces. I've spent 9+ working on a variety of web projects, from single-page applications to complex e-commerce websites. </p>
+
+                                <p>I specialize in React, Angular, vue and I have a deep understanding of HTML, CSS, JavaScript, and Redux, Rxjs, NgRx
+                                I'm always looking for new ways to improve my coding skills and stay up-to-date with the latest web development trends. </p>
                             </Text>
                         </CardBody>
 
                         <CardFooter>
                             <Button variant='solid' colorScheme='blue'>
+                                Buy Latte
+                            </Button>
+                            <Button mx='3' variant='solid' colorScheme='blue'>
                                 Buy Latte
                             </Button>
                         </CardFooter>
