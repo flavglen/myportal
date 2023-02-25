@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navigate, NavLink, Link } from 'react-router-dom';
 import './sidebar.css';
 
 const Sidebar: React.FC = () => {
@@ -9,32 +10,22 @@ const Sidebar: React.FC = () => {
     <hr/>
     <ul className="nav nav-pills flex-column mb-auto">
       <li className="nav-item">
-        <a href="#" className="nav-link active" aria-current="page">
-          Home
-        </a>
+        <Link to='home'>Home</Link>
       </li>
       <li>
-        <a href="#" className="nav-link text-white">
-          Dashboard
-        </a>
+        <Link to='timeline'>Timeline</Link>
       </li>
       <li>
-        <a href="#" className="nav-link text-white">
-       
-          Orders
-        </a>
+        <Link to='timeline'>Projects</Link>
       </li>
       <li>
-        <a href="#" className="nav-link text-white">
-       
-          Products
-        </a>
+         <Link to='timeline'>Skills</Link>    
       </li>
       <li>
-        <a href="#" className="nav-link text-white">
-        
-          Customers
-        </a>
+        <Link to='timeline'>Contact</Link>  
+      </li>
+      <li>
+        <Link to='timeline'>Gallery</Link>
       </li>
     </ul>
     <hr/>
