@@ -1,8 +1,5 @@
-import React, { ReactNode, RefObject } from 'react';
-import { Button } from '@chakra-ui/button';
-import { useDisclosure } from '@chakra-ui/hooks';
-import { Input } from '@chakra-ui/input';
-import { Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay } from '@chakra-ui/modal';
+import React, { RefObject } from 'react';
+import { Drawer, DrawerContent, DrawerOverlay } from '@chakra-ui/modal';
 import { FocusableElement } from '@chakra-ui/utils';
 import Sidebar from '../sidebar/sidebar';
 
