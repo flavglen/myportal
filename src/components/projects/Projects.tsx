@@ -17,11 +17,17 @@ const Projects: React.FC = () => {
                         Professional
                     </Checkbox>
                 </Stack>
-                <Grid templateColumns='repeat(4, 250px)' templateRows='1fr' gap={6} my={3}>
+                <Grid templateColumns={{
+                        base: "repeat(1, 1fr)",
+                        lg: "repeat(4, 1fr)"
+                    }}
+                    templateRows='200px'
+                    gap={6}
+                    my={3}>
                     {
                         projectData.map((data, index) => {
                             return (
-                                <GridItem height={'auto'} bg='blue.500'>
+                                <GridItem height={'150px'} bg='blue.500'>
                                     <ProjectCard key={index} />
                                 </GridItem>
                             )
