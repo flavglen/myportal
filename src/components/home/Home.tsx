@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Box } from '@chakra-ui/react'
+import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button } from '@chakra-ui/react'
 import { Center, Flex } from '@chakra-ui/react'
 
 const Home: React.FC = () => {

@@ -1,8 +1,6 @@
 import React from 'react';
 import { Avatar } from "@chakra-ui/avatar";
-import { Button, IconButton } from "@chakra-ui/button";
 import { Card, CardBody, CardFooter, CardHeader } from "@chakra-ui/card";
-import { Image } from "@chakra-ui/image";
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 
 export const ProjectCard: React.FC = () => {
