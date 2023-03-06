@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import {
   createBrowserRouter,RouterProvider
 } from "react-router-dom";
@@ -32,10 +32,15 @@ const router = createBrowserRouter([
   },
 ]);
 
+const theme = extendTheme({
+  fonts: {
+    body: "Roboto, sans-serif",
+  }
+})
 
 const App: React.FC = () => {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
         <RouterProvider router={router} />
     </ChakraProvider>
   )

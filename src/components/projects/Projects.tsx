@@ -7,7 +7,7 @@ import { Checkbox } from '@chakra-ui/checkbox';
 const Projects: React.FC = () => {
 
     return (
-        <Flex height={'100vh'} justifyContent={'center'} alignItems={'center'}>
+        <Flex  justifyContent={'center'} alignItems={'center'} my={20}>
             <Box p={5} shadow='md' borderWidth='1px'>
                 <Stack spacing={5} direction='row'>
                     <Checkbox colorScheme='red' defaultChecked>
@@ -19,15 +19,15 @@ const Projects: React.FC = () => {
                 </Stack>
                 <Grid templateColumns={{
                         base: "repeat(1, 1fr)",
-                        lg: "repeat(4, 1fr)"
+                        lg: "repeat(3, 1fr)"
                     }}
-                    templateRows='200px'
-                    gap={6}
+                    rowGap={10}
+                    columnGap={20}
                     my={3}>
                     {
                         projectData.map((data, index) => {
                             return (
-                                <GridItem height={'150px'} bg='blue.500'>
+                                <GridItem my={30} height={'250px'}>
                                     <ProjectCard key={index} />
                                 </GridItem>
                             )

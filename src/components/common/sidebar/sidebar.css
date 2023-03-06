@@ -2,3 +2,15 @@
     width: 280px;
     height: 100%;
 }
+
+.nav-item {
+    height: 35px;
+}
+
+.custom-icon {
+    margin-left: 10px;
+}
+
+.test {
+    width: 15px;
+}
