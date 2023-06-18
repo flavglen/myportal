@@ -82,7 +82,7 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
             </>
           </Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link onClick={closeMenu} to='timeline'>
             <>
               <FontAwesomeIcon icon={faCode} className="test" />
@@ -97,7 +97,7 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
               <span className="custom-icon"> Contact </span>
             </>
           </Link>
-        </li>
+        </li> */}
       </ul>
       <hr />
     </div>
