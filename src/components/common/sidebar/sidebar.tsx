@@ -1,4 +1,4 @@
-import { Avatar, Badge, Box, Divider, Flex, GridItem, Text } from '@chakra-ui/react';
+import { Avatar, Badge, Box, Divider, Flex, Text } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';

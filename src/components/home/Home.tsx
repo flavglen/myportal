@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Code, Highlight, Divider } from '@chakra-ui/react'
+import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Highlight, Divider } from '@chakra-ui/react'
 import { Center, Flex } from '@chakra-ui/react'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
