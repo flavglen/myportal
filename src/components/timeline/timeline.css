@@ -99,6 +99,10 @@ body {
     border-radius: 6px;
 }
 
+.company-heading {
+    color: #FF9F55;
+}
+
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
 
