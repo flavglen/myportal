@@ -37,7 +37,8 @@ const Projects: React.FC = () => {
                 </Stack>
                 <Grid templateColumns={{
                         base: "repeat(1, 1fr)",
-                        lg: "repeat(3, 1fr)"
+                        lg: "repeat(3, 1fr)",
+                        md: "repeat(3, 1fr)"
                     }}
                     rowGap={10}
                     columnGap={20}

@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home: React.FC = () => {
     return (
-        <Flex color='white' alignContent="center" height="40em">
-            <Center flex='5' mx="3">
+        <Flex color='white' alignContent="center" padding={'10px'}  flexDirection={{ base: 'column', sm: 'column' , md: 'row' }}>
+            <Center  mx="3" marginBottom={'20px'}  order={{ base: 2, sm: 1, md: 1 }}>
                 <Card
                     direction={{ base: 'column', sm: 'row' }}
                     overflow='hidden'
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
                     </Stack>
                 </Card>
             </Center>
-            <Center flex='2'>
+            <Center padding={'10px'} order={{ base: 1, sm: 2, md: 2 }} >
                 <Card
                     direction={{ base: 'column', sm: 'row' }}
                     overflow='hidden'
@@ -58,9 +58,9 @@ const Home: React.FC = () => {
 
                     <Image
                         objectFit='cover'
-                        maxW={{ base: '100%', sm: '200px', md:'300px' }}
+                        maxW={{ base: '150px', sm: '200px', md:'250px' }}
                         src={process.env.PUBLIC_URL + '/images/PXL_dp.jpg'}
-                        alt='Caffe Latte'
+                        alt='Glen F Pais'
                     />
 
                 </Card>

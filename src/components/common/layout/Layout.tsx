@@ -1,8 +1,9 @@
 import React from 'react';
-import { Button, Grid, GridItem, useDisclosure } from '@chakra-ui/react';
+import { Button, Grid, GridItem, Text, useDisclosure } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../sidebar/sidebar';
 import SideMenu from '../slidemenu/Sidemenu';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 export const Layout: React.FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
@@ -15,17 +16,18 @@ export const Layout: React.FC = () => {
                 templateAreas={{
                     base: '"topnav" "main" "footer"',
                     lg: '"nav main" "nav main" "nav footer"',
-                    md: '"nav main" "nav main" "nav footer"',
+                    md: '"topnav" "main" "footer"',
+                    sm: '"topnav" "main" "footer"',
                 }}
                 gridTemplateRows={{
                     base: "50px auto 30px",
                     lg: '100vh auto 30px',
-                    md: '100vh auto 30px',
+                    md: "50px auto 30px",
                 }}
                 gridTemplateColumns={{
-                    base: '1fr',
+                    base: '5fr',
                     lg: '280px 11fr',
-                    md: '280px 11fr',
+                    md: '5fr',
                 }}
                 h='200px'
                 gap='1'
@@ -36,11 +38,11 @@ export const Layout: React.FC = () => {
                     {
                         base: 'block',
                         lg: 'none',
-                        md: 'none'
+                        md: 'block'
                     }
                 }>
-                    <Button ref={btnRef} onClick={onOpen} colorScheme='teal'>
-                        Open
+                    <Button marginTop={'5px'} ref={btnRef} onClick={onOpen} colorScheme='teal'>
+                        <HamburgerIcon  />
                     </Button>
                 </GridItem>
 
@@ -48,7 +50,7 @@ export const Layout: React.FC = () => {
                     {
                         base: 'none',
                         lg: 'block',
-                        md: ' block'
+                        md: ' none'
                     }
                 }>
                     <Sidebar />
@@ -58,8 +60,10 @@ export const Layout: React.FC = () => {
                     <Outlet />
                 </GridItem>
 
-                <GridItem pl='2' bg='black' w={'100%'} area={'footer'} position={'fixed'} bottom={0}>
-                    Footer
+                <GridItem pl='2' bg='black' w={'100%'} h={'50px'} area={'footer'} position={'fixed'} zIndex={9999} bottom={0}>
+                    <Text fontSize='14px' color='white' textAlign={'center'} paddingTop="15px">
+                         (c) Glen Flavian Pais  - 2023
+                    </Text>
                 </GridItem>
             </Grid>
 

@@ -34,16 +34,24 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
 
       <Flex mb={10}>
         <Box ml='3'>
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <Link to='https://github.com/flavglen' target="_blank">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </Link>
         </Box>
         <Box ml='3'>
-          <FontAwesomeIcon icon={faFacebook} size="2x" />
+          <Link to='https://www.facebook.com/glen.pais' target="_blank">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </Link>
         </Box>
         <Box ml='3'>
-          <FontAwesomeIcon icon={faInstagram} size="2x" />
+          <Link to='https://www.instagram.com/glenpais/' target="_blank">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
+          </Link>
         </Box>
         <Box ml='3'>
+          <Link to='https://www.flickr.com/people/192737045@N08/' target="_blank">
           <FontAwesomeIcon icon={faFlickr} size="2x" />
+          </Link>
         </Box>
       </Flex>
 
@@ -75,29 +83,13 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
           </Link>
         </li>
         <li className="nav-item">
-          <Link onClick={closeMenu} to='timeline'>
+          <Link onClick={closeMenu} to='skills'>
             <>
               <FontAwesomeIcon icon={faCode} className="test" />
               <span className="custom-icon"> Skills </span>
             </>
           </Link>
         </li>
-        {/* <li className="nav-item">
-          <Link onClick={closeMenu} to='timeline'>
-            <>
-              <FontAwesomeIcon icon={faCode} className="test" />
-              <span className="custom-icon"> Gallery </span>
-            </>
-          </Link>
-        </li>
-        <li className="nav-item">
-          <Link onClick={closeMenu} to='timeline'>
-            <>
-              <FontAwesomeIcon icon={faCode} className="test" />
-              <span className="custom-icon"> Contact </span>
-            </>
-          </Link>
-        </li> */}
       </ul>
       <hr />
     </div>
