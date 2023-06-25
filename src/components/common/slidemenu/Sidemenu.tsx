@@ -19,8 +19,8 @@ const SideMenu = React.forwardRef <Ref, props>(({ isOpen, onClose }, ref: any  )
                 onClose={onClose}
                 finalFocusRef={ref}
             >
-                <DrawerOverlay />
-                <DrawerContent>
+                <DrawerOverlay/>
+                <DrawerContent background={'none'} boxShadow={'none'}>
                     <Sidebar menuClicked={onClose}/>
                 </DrawerContent>
             </Drawer>

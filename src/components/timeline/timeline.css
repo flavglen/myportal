@@ -34,6 +34,10 @@ body {
     width: 50%;
 }
 
+.mycontainer:last-child {
+    margin-bottom: 50px;
+}
+
 /* The circles on the timeline */
 .mycontainer::after {
     content: '';
@@ -93,7 +97,6 @@ body {
 
 /* The actual content */
 .content {
-    padding: 20px 30px;
     background-color: white;
     position: relative;
     border-radius: 6px;
