@@ -21,16 +21,10 @@ export const ProjectCard: React.FC<{data: any}> = (props) => {
                             <Text>{start} - {end} </Text>
                         </Box>
                     </Flex>
-                    {/* <IconButton
-                        variant='ghost'
-                        colorScheme='gray'
-                        aria-label='See menu'
-                        icon={<BsThreeDotsVertical />}
-                    /> */}
                 </Flex>
             </CardHeader>
             <CardBody>
-                <Text className='clap-3-line' title={description}>
+                <Text fontSize={'12px'} className='clap-3-line' title={description}>
                     {description}
                 </Text>
             </CardBody>

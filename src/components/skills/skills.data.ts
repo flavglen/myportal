@@ -83,5 +83,20 @@ export const skillsData = [
         skill: 'Bootstrap',
         rating: 8,
         years: 9
-    }
+    },
+    {
+        skill: 'GraphQL',
+        rating: 5,
+        years: 2
+    },
+    {
+        skill: 'AWS',
+        rating: 5,
+        years: 2
+    },
+    {
+        skill: 'Redux / NGRX',
+        rating: 7,
+        years: 5
+    },
 ]

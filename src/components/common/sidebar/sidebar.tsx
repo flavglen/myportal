@@ -4,7 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { faHome, faTimeline, faCode } from '@fortawesome/free-solid-svg-icons'
 import { faBuilding } from '@fortawesome/free-regular-svg-icons'
-import { faGithub, faFacebook, faInstagram, faFlickr } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faFacebook, faInstagram, faFlickr, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import './sidebar.css';
 
 interface props {
@@ -36,6 +36,11 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
         <Box ml='3'>
           <Link to='https://github.com/flavglen' target="_blank">
             <FontAwesomeIcon icon={faGithub} size="2x" />
+          </Link>
+        </Box>
+        <Box ml='3'>
+          <Link to='https://www.linkedin.com/in/flavglen/' target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </Link>
         </Box>
         <Box ml='3'>
