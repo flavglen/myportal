@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Highlight, Divider } from '@chakra-ui/react'
+import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Highlight, Divider, Link } from '@chakra-ui/react'
 import { Center, Flex } from '@chakra-ui/react'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
                     <Stack>
                         <CardBody>
-                            <Heading size='xl' color={'tomato'}> Glen Flavian Pais </Heading>
+                            <Heading size='xl' color={'tomato'}> &lt; Glen Flavian Pais / &gt; </Heading>
                             <Divider size={'sm'} bg="red" color={'red'} mb="2" mt="2"/>
                             <Stack direction='row'>
                                 <Text py='2' lineHeight={6}>
@@ -24,7 +24,7 @@ const Home: React.FC = () => {
                                         query={['Angular', 'Javascript', 'Typescript', 'React', 'Vue js', 'Node Js']}
                                         styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
                                     >
-                                        Hello, I'm &lt;Glen / &gt;, a frontend and node developer with a passion for crafting beautiful and responsive web interfaces. I've spent 9+ working on a variety of web projects,
+                                        Hello, I'm Glen,  A frontend and node developer with a passion for crafting beautiful and responsive web interfaces. I've spent 9+ working on a variety of web projects,
                                         from single-page applications to complex e-commerce websites. I specialize in Angular, React, Typescript, Vue Js, Node js, HTML, CSS .
                                         I'm always looking for new ways to improve my coding skills and stay up-to-date with the latest web development trends.
                                     </Highlight>
@@ -40,10 +40,7 @@ const Home: React.FC = () => {
 
                         <CardFooter>
                             <Button variant='solid' colorScheme='blue'>
-                                Resume
-                            </Button>
-                            <Button mx='3' variant='solid' colorScheme='blue'>
-                                Gallery
+                                <Link isExternal  href="https://github.com/flavglen/resume/blob/main/UI-Fronend%20Developer-Glen%20Flavian-v2.pdf"> Download Resume </Link>
                             </Button>
                         </CardFooter>
                     </Stack>

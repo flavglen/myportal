@@ -46,7 +46,7 @@ export const Layout: React.FC = () => {
                     </Button>
                 </GridItem>
 
-                <GridItem pl='2' bg='pink.300' area={'nav'} display={
+                <GridItem pl='2' bg='rgb(33, 37, 41)' area={'nav'} display={
                     {
                         base: 'none',
                         lg: 'block',
