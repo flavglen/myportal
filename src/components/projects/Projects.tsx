@@ -3,10 +3,12 @@ import { Box, Flex, Grid, GridItem, Stack } from '@chakra-ui/layout';
 import { ProjectCard } from '../common/project-card/ProjectCard';
 import { projectData } from './Projects.data';
 import { Checkbox } from '@chakra-ui/checkbox';
+import ProjectsDetails from './projects-details/ProjectsDetails';
 
 const Projects: React.FC = () => {
     const projectDataClone = JSON.parse(JSON.stringify(projectData));
     const [projectGrid, setProjectGrid] = useState(projectData);
+    const [loadMoreData, setLoadMoreData] = useState<any>(null);
 
     //ref
     const checkboxPersonal = useRef<HTMLInputElement>(null);
@@ -27,7 +29,7 @@ const Projects: React.FC = () => {
     return (
         <Flex  justifyContent={'center'} alignItems={'center'} my={20}>
             <Box p={5} shadow='md' borderWidth='1px'>
-                <Stack spacing={5} direction='row'>
+                <Stack spacing={2} direction='row'>
                     <Checkbox  ref={checkboxPro} colorScheme={'green'} value={1} defaultChecked onChange={filterProjects}>
                         Professional
                     </Checkbox>
@@ -40,20 +42,22 @@ const Projects: React.FC = () => {
                         lg: "repeat(3, 1fr)",
                         md: "repeat(3, 1fr)"
                     }}
-                    rowGap={10}
+                    rowGap={0}
                     columnGap={20}
-                    my={3}>
+                    my={2}>
                     {
                         projectGrid.map((data, index) => {
                             return (
-                                <GridItem my={30} height={'250px'}>
-                                    <ProjectCard key={index} data={data}/>
+                                <GridItem my={30} height={'250px'} maxHeight="250px">
+                                    <ProjectCard setLoadMoreData={setLoadMoreData} key={index} data={data}/>
                                 </GridItem>
                             )
                         })
                     }
                 </Grid>
             </Box>
+
+            { !!loadMoreData  && <ProjectsDetails data={loadMoreData} setLoadMoreData={setLoadMoreData} /> }
         </Flex>
     )
 }

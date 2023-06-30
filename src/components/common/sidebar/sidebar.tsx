@@ -16,9 +16,9 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
   const closeMenu = () => {
     menuClicked && menuClicked();
   }
-
+ //d-flex flex-column flex-shrink-0 p-3 text-white bg-dark 
   return (
-    <div className="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark sidebar">
+    <Flex flexDirection={'column'} p={4} className="sidebar" bg={'black'} color={'white'}>
       <Flex mb={10}>
         <Avatar size={'lg'} src={process.env.PUBLIC_URL + '/images/PXL_dp.jpg'} />
         <Box ml='3'>
@@ -97,7 +97,7 @@ const Sidebar: React.FC<props> = ({ menuClicked }) => {
         </li>
       </ul>
       <hr />
-    </div>
+    </Flex>
   )
 };
 

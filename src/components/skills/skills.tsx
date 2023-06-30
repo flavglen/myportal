@@ -30,7 +30,7 @@ const Skills: React.FC = () => {
                        <Tr key={'key-'+ i}>
                             <Td>{skills.skill}</Td>
                             <Td>{skills.years}</Td>
-                            <Td><Progress value={(skills.rating * 100 / 10)} /></Td>
+                            <Td><Progress  value={(skills.rating * 100 / 10)} /></Td>
                         </Tr>
                     )
                 }

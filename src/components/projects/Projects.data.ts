@@ -36,7 +36,7 @@ export const projectData = [
         description: 'Quick Market Reports application is a software tool designed to provide users with timely and concise market insights'
     },
     {
-        name: 'Video calling APP - Quickblox',
+        name: 'Video calling APP',
         start: 'Jan, 2016',
         end: 'Dec, 2017',
         company: 'Bolas Intelli Solutions',

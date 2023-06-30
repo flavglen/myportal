@@ -1,25 +1,37 @@
 import React from 'react';
-import { Card, Heading, CardBody, CardFooter, Stack, Image, Text, Button, Highlight, Divider, Link } from '@chakra-ui/react'
+import { 
+    Card, 
+    Heading, 
+    CardBody, 
+    CardFooter, 
+    Stack, 
+    Image, 
+    Text, 
+    Button, 
+    Highlight, 
+    Divider, 
+    Link 
+} from '@chakra-ui/react';
 import { Center, Flex } from '@chakra-ui/react'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Home: React.FC = () => {
     return (
-        <Flex color='white' alignContent="center" padding={'10px'}  flexDirection={{ base: 'column', sm: 'column' , md: 'row' }}>
-            <Center  mx="3" marginBottom={'20px'}  order={{ base: 2, sm: 1, md: 1 }}>
+        <Flex color='white' alignContent="center" p={'10px'} flexDirection={{ base: 'column', sm: 'column' , md: 'row' }}>
+            <Center mx="3" mb={'20px'}  order={{ base: 2, sm: 1, md: 1 }}>
                 <Card
                     direction={{ base: 'column', sm: 'row' }}
                     overflow='hidden'
                     variant='outline'
+                    mb={8}
                 >
-
                     <Stack>
                         <CardBody>
-                            <Heading size='xl' color={'tomato'}> &lt; Glen Flavian Pais / &gt; </Heading>
+                            <Heading size='lg' color={'red.800'}> &lt; Glen Flavian Pais / &gt; </Heading>
                             <Divider size={'sm'} bg="red" color={'red'} mb="2" mt="2"/>
                             <Stack direction='row'>
-                                <Text py='2' lineHeight={6}>
+                                <Text py='2' lineHeight={6} fontSize="sm">
                                     <Highlight
                                         query={['Angular', 'Javascript', 'Typescript', 'React', 'Vue js', 'Node Js']}
                                         styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
@@ -31,15 +43,16 @@ const Home: React.FC = () => {
                                 </Text>
                             </Stack>
 
-                            <Text>
-                                When I'm not coding, you can usually find me behind a <FontAwesomeIcon color='tomato' icon={faCamera} size="1x" title='Camera' /> lens, capturing the world around me through photography. As an avid photographer, I love to explore new locations and experiment with different techniques to create stunning images that tell a story !!
+                            <Text fontSize="sm">
+                                When I'm not coding, you can usually find me behind a <FontAwesomeIcon color='#822727' icon={faCamera} size="1x" title='Camera' /> lens, 
+                                capturing the world around me through photography. As an avid photographer, I love to explore new locations and experiment with different techniques to create stunning images that tell a story !!
                                 Whether I'm working on a complex web project or capturing a beautiful sunset, I always bring a creative and detail-oriented approach to my work.
                             </Text>
 
                         </CardBody>
 
                         <CardFooter>
-                            <Button variant='solid' colorScheme='blue'>
+                            <Button mb={2} variant='solid'color={'white'} size="sm" bg='red.800'>
                                 <Link isExternal  href="https://github.com/flavglen/resume/blob/main/UI-Fronend%20Developer-Glen%20Flavian-v2.pdf"> Download Resume </Link>
                             </Button>
                         </CardFooter>
@@ -52,14 +65,12 @@ const Home: React.FC = () => {
                     overflow='hidden'
                     variant='outline'
                 >
-
                     <Image
                         objectFit='cover'
                         maxW={{ base: '150px', sm: '200px', md:'250px' }}
                         src={process.env.PUBLIC_URL + '/images/PXL_dp.jpg'}
                         alt='Glen F Pais'
                     />
-
                 </Card>
             </Center>
         </Flex>

@@ -1,16 +1,15 @@
 import React from 'react';
 import { Button, Grid, GridItem, Text, useDisclosure } from '@chakra-ui/react';
 import { Outlet } from 'react-router-dom';
+import { HamburgerIcon } from '@chakra-ui/icons';
 import Sidebar from '../sidebar/sidebar';
 import SideMenu from '../slidemenu/Sidemenu';
-import { HamburgerIcon } from '@chakra-ui/icons';
 
 export const Layout: React.FC = () => {
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef: any = React.useRef();
 
     return (
-
         <>
             <Grid
                 templateAreas={{
@@ -46,7 +45,7 @@ export const Layout: React.FC = () => {
                     </Button>
                 </GridItem>
 
-                <GridItem pl='2' bg='rgb(33, 37, 41)' area={'nav'} display={
+                <GridItem area={'nav'} display={
                     {
                         base: 'none',
                         lg: 'block',
@@ -60,7 +59,7 @@ export const Layout: React.FC = () => {
                     <Outlet />
                 </GridItem>
 
-                <GridItem pl='2' bg='black' w={'100%'} h={'50px'} area={'footer'} position={'fixed'} zIndex={9999} bottom={0}>
+                <GridItem pl='2' bg='red.800' w={'100%'} h={'50px'} area={'footer'} position={'fixed'} zIndex={9999} bottom={0}>
                     <Text fontSize='14px' color='white' textAlign={'center'} paddingTop="15px">
                          (c) Glen Flavian Pais  - 2023
                     </Text>
