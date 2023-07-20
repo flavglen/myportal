@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
                         md: "repeat(3, 1fr)"
                     }}
                     rowGap={0}
-                    columnGap={20}
+                    columnGap={10}
                     my={2}>
                     {
                         projectGrid.map((data, index) => {

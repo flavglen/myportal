@@ -1,13 +1,15 @@
 import React from 'react';
 import { Avatar, AvatarBadge} from "@chakra-ui/avatar";
 import { Card, CardBody, CardFooter, CardHeader } from "@chakra-ui/card";
-import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
+import { Box, Flex, Heading, Link, Text } from "@chakra-ui/layout";
 import { InfoIcon } from '@chakra-ui/icons'
-import './ProjectCard.css';
 import { Button } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import './ProjectCard.css';
 
 export const ProjectCard: React.FC<{data: any, setLoadMoreData: Function}> = (props) => {
-    const { name, start, end, description, personal } = props.data;
+    const { name, start, end, description, personal, git, company } = props.data;
     const { setLoadMoreData } = props;
     return (
         <Card maxW='md'>
@@ -18,8 +20,9 @@ export const ProjectCard: React.FC<{data: any, setLoadMoreData: Function}> = (pr
                        <AvatarBadge borderColor='papayawhip' bg={!personal ? 'green.500' : 'tomato'} boxSize='1rem' />
                       </Avatar>
                         <Box>
-                            <Heading fontSize="xs">{name}</Heading>
-                            <Text fontSize="xxs">{start} - {end} </Text>
+                            <Heading fontSize="sm">{name}</Heading>
+                            <Text fontSize="xs">{start} - {end} </Text>
+                            <Text fontSize="xs">Company : {company} </Text>
                         </Box>
                     </Flex>
                 </Flex>
@@ -31,7 +34,7 @@ export const ProjectCard: React.FC<{data: any, setLoadMoreData: Function}> = (pr
             </CardBody>
 
             <CardFooter
-                justify='space-between'
+                justifyContent={'space-between'}
                 flexWrap='wrap'
                 sx={{
                     '& > button': {
@@ -39,9 +42,15 @@ export const ProjectCard: React.FC<{data: any, setLoadMoreData: Function}> = (pr
                     },
                 }}
             >
-                  <Button bg='red.800' color={'white'} size='xs' onClick={() => setLoadMoreData(props.data) }>
-                     Show More...
-                  </Button>
+                  <Link bg='red.800' background={'none'} fontSize="12px" color={'#822727'}  onClick={() => setLoadMoreData(props.data) }>
+                     Read More...
+                  </Link>
+
+                  { git && 
+                    <Link bg='red.800' href={git} target={'_blank'} background={'none'}>
+                        <FontAwesomeIcon color='#822727' icon={faGithub} size="1x" title='Camera' />
+                    </Link>
+                 }
             </CardFooter>
         </Card>
     )
