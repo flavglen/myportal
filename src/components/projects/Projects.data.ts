@@ -72,7 +72,7 @@ export const projectData = [
         company: 'Personal',
         personal: true,
         skills: ['React', 'Chakra UI', 'Firebase', 'Jest', 'HTML', 'CSS'],
-        description: 'The Smart Defect Logger is an innovative tool that streamlines the process of creating dynamic Cypress test cases by parsing JSON files. By leveraging the power of JSON parsing, the tool extracts relevant information from the JSON data, such as test case descriptions, input data, expected results, and assertions. It intelligently generates Cypress test scripts based on the parsed JSON, eliminating the need for manual test case creation and reducing human error',
+        description: 'My personal portfolio',
         git:'https://github.com/flavglen/myportal',
         link: 'https://flavglen.githib.io'
     }
