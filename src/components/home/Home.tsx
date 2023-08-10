@@ -37,8 +37,10 @@ const Home: React.FC = () => {
                                         styles={{ px: '2', py: '1', rounded: 'full', bg: 'teal.100' }}
                                     >
                                         Hello, I'm Glen,  A frontend and node developer with a passion for crafting beautiful and responsive web interfaces. I've spent 9+ working on a variety of web projects,
-                                        from single-page applications to complex e-commerce websites. I specialize in Angular, React, Typescript, Vue Js, Node js, HTML, CSS .
+                                        from single-page applications to complex e-commerce websites. I specialize in Angular, React, Typescript, Vue Js, Node js, HTML, CSS, Next Js .
                                         I'm always looking for new ways to improve my coding skills and stay up-to-date with the latest web development trends.
+                                        Additionally, I have expertise in serverless architecture and cloud computing,
+                                         leveraging the power of AWS to build scalable and reliable web applications
                                     </Highlight>
                                 </Text>
                             </Stack>
@@ -47,6 +49,13 @@ const Home: React.FC = () => {
                                 When I'm not coding, you can usually find me behind a <FontAwesomeIcon color='#822727' icon={faCamera} size="1x" title='Camera' /> lens, 
                                 capturing the world around me through photography. As an avid photographer, I love to explore new locations and experiment with different techniques to create stunning images that tell a story !!
                                 Whether I'm working on a complex web project or capturing a beautiful sunset, I always bring a creative and detail-oriented approach to my work.
+                            </Text>
+
+                            
+                            <Text py='2' fontSize="sm">
+                                I love to unwind and have fun by playing games on my PlayStation 4 (PS4).
+                                Some of my favorite games include epic multiplayer battles in 'Battlefield,' intense and action-packed missions in 'Call of Duty,'
+                                diving into the dark and gritty world of 'Max Payne,' and immersing myself in the thrilling adventures of 'Batman.
                             </Text>
 
                         </CardBody>

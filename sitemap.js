@@ -1,15 +1,12 @@
-
 const fs = require('fs');
 
-
 const URLS = ['home', 'projects', 'skills', 'timeline'];
-const sitemap = `
-<?xml version="1.0" encoding="UTF-8"?>
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://flavglen.github.io></loc>
+        <loc>https://flavglen.github.io/</loc>
         <lastmod>${new Date().toISOString().slice(0,10)}</lastmod>
-        <changeFreq>weekly</changeFreq>
+        <changefreq>weekly</changefreq>
         <priority>1</priority>
     </url>
     ${
@@ -17,12 +14,10 @@ const sitemap = `
     `<url>
         <loc>https://flavglen.github.io/${url}</loc>
         <lastmod>${new Date().toISOString().slice(0,10)}</lastmod>
-        <changeFreq>weekly</changeFreq>
-    </url>
-    `)).join("")
+        <changefreq>weekly</changefreq>
+    </url>`)).join("")
     }
-</urlset>
-`;
+</urlset>`;
 
 fs.writeFileSync("./build/sitemap.xml", sitemap);
 console.log("genarated Sitemap successfully");
