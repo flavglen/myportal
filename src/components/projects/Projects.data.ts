@@ -5,14 +5,15 @@ export const projectData = [
         end: 'Current',
         company: 'Loblaws Digital',
         personal: false,
-        skills: ['React', 'css', 'html', 'redux', 'nodejs', 'graphQL', 'GCP', 'Angular', 'Cypress', 'jest', 'RXjs', 'Firebase', 'Typescript'],
-        description: ' loblaw.ca provides customers with the convenience of online grocery shopping. Customers can browse through a wide range of products, add them to their virtual shopping cart, and have them delivered to their doorstep or ready for pickup at a nearby store.'
+        skills: ['React', 'css', 'html', 'redux', 'nodejs', 'graphQL', 'Google Cloud', 'Angular', 'Cypress', 'Jest', 'RXjs', 'Firebase', 'Typescript', 'AWS', 'NextJs', 'Snowplow', 'PingDoM'],
+        description: 'Loblaw.ca provides customers with the convenience of online grocery shopping. Customers can browse through a wide range of products, add them to their virtual shopping cart, and have them delivered to their doorstep or ready for pickup at a nearby store.',
+        link: 'https://loblaws.ca'
     },
     {
         name: 'Underwriter tool',
         start: 'Dec, 2019',
         end: 'Nov 2021',
-        company: 'Hartford Insurance / Infoys',
+        company: 'Hartford Insurance / Infosys',
         personal: false,
         skills: ['Angular', 'Rxjs', 'express js', 'Mongodb', 'Firebase', 'CSS', 'HTML', 'Cypress' , 'Jest / Jasmine', 'Typescript', 'AWS'],
         description: 'Software application or platform used by insurance underwriters to streamline and enhance their underwriting processes.'
@@ -36,7 +37,7 @@ export const projectData = [
         description: 'Quick Market Reports application is a software tool designed to provide users with timely and concise market insights'
     },
     {
-        name: 'Video calling APP - Quickblox',
+        name: 'Video calling APP',
         start: 'Jan, 2016',
         end: 'Dec, 2017',
         company: 'Bolas Intelli Solutions',
@@ -50,8 +51,9 @@ export const projectData = [
         end: 'N/A',
         company: 'Personal',
         personal: true,
-        skills: ['React', 'Angular', 'HTML', 'CSS', 'Typescript', 'HTML', 'CSS'],
-        description: 'The application is designed to simplify the process of splitting bills among a group. With its intuitive interface and advanced scanning capabilities, users can effortlessly scan their bills using their device\'s camera'
+        skills: ['React', 'Angular', 'HTML', 'CSS', 'Typescript', 'HTML', 'CSS', 'Jest'],
+        description: 'The application is designed to simplify the process of splitting bills among a group. With its intuitive interface and advanced scanning capabilities, users can effortlessly scan their bills using their device\'s camera',
+        git:''
     },
     {
         name: 'Smart Defect Logger',
@@ -60,6 +62,18 @@ export const projectData = [
         company: 'Personal',
         personal: true,
         skills: ['React', 'Angular', 'Cypress', 'Typescript', 'HTML', 'CSS'],
-        description: 'The Smart Defect Logger is an innovative tool that streamlines the process of creating dynamic Cypress test cases by parsing JSON files. By leveraging the power of JSON parsing, the tool extracts relevant information from the JSON data, such as test case descriptions, input data, expected results, and assertions. It intelligently generates Cypress test scripts based on the parsed JSON, eliminating the need for manual test case creation and reducing human error'
+        description: 'The Smart Defect Logger is an innovative tool that streamlines the process of creating dynamic Cypress test cases by parsing JSON files. By leveraging the power of JSON parsing, the tool extracts relevant information from the JSON data, such as test case descriptions, input data, expected results, and assertions. It intelligently generates Cypress test scripts based on the parsed JSON, eliminating the need for manual test case creation and reducing human error',
+        git:'https://github.com/flavglen/smart-defect-logger'
+    },
+    {
+        name: 'My Portfolio',
+        start: 'Jun, 2023',
+        end: 'Jun, 2023',
+        company: 'Personal',
+        personal: true,
+        skills: ['React', 'Chakra UI', 'Firebase', 'Jest', 'HTML', 'CSS'],
+        description: 'My personal portfolio',
+        git:'https://github.com/flavglen/myportal',
+        link: 'https://flavglen.githib.io'
     }
 ]

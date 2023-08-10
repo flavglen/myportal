@@ -34,7 +34,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && node deploy.js"
+    "deploy": "npm run build && node sitemap.js && node deploy.js",
+    "lint:fix": "eslint src --fix"
   },
   "eslintConfig": {
     "extends": [
