@@ -3,7 +3,6 @@ import { Avatar, AvatarBadge} from "@chakra-ui/avatar";
 import { Card, CardBody, CardFooter, CardHeader } from "@chakra-ui/card";
 import { Box, Flex, Heading, Link, Text } from "@chakra-ui/layout";
 import { InfoIcon } from '@chakra-ui/icons'
-import { Button } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import './ProjectCard.css';
